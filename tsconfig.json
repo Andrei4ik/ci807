@@ -1,0 +1,10 @@
+{
+    "CompilerOptions": {
+        "module":"commonjs",
+        "target":"es5",
+        "sourseMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
