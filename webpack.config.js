@@ -1,10 +1,10 @@
 const path = require("path");
 const webpack = require('webpack');
-const HtmlWbpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 
-MSFIDOCredentialAssertion.exports = {
+module.exports = {
     entry: './app/index.js',
 
     mode: env,
@@ -42,6 +42,6 @@ MSFIDOCredentialAssertion.exports = {
 
     plugins:  [
         new HtmlWebpackPlugin({template: './app/index.html'}),
-        webpack.HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ]
 }
